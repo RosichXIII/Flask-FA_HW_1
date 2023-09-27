@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="store_name">Pilot Online Store</h1>
+        <nav>
+            <div class="header_nav">
+                <a href="/" class="header_nav_text">Home</a>
+                <a href="/clothes/" class="header_nav_text">Clothes</a>
+                <a href="/footwear/" class="header_nav_text">Footwear</a>
+                <a href="/jackets/" class="header_nav_text">Jackets</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="../static/img/home_back.jpg" alt="Bazaar_back" class="background_img">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="copyright">
+            <h3 class="footer_text">© 2023 Some Brand Stuff...</h3>
+            <img src="../static/img/footer_icon.png" alt="Icon" class="icons footer_icon">
+        </div>
+    </footer>
+</body>
+</html>
